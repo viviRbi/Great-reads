@@ -7,14 +7,16 @@ const Main = (props) => {
     <div className="bookdisplay">
       {props.books.map(eachBook =>
         <div key={eachBook._id} className="eachbookholder" onClick={(e) => props.bookIdHandle(e)} >
-          <Link to={`/book/${eachBook._id}`}><section id={eachBook._id} className="bookdetaillinksection"></section></Link>
+          <Link to={`/book/${eachBook._id}`}>
+            <div id={eachBook._id} className="bookdetaillinksection"></div>
+          </Link>
           <section id={eachBook._id} onClick={(e) => props.bookIdHandle(e)} style={{ backgroundImage: `url(${eachBook.coverImgURL})` }} className="eachbookimage">
             <small className="bookdelete" id={eachBook._id} onClick={(e) => props.bookIdHandle(e)}>Delete</small>
             <small className="bookedit" id={eachBook._id} onClick={(e) => props.bookIdHandle(e)}>Edit</small>
           </section>
           <section>
-            <p className="eachbooktitle">{eachBook.title}</p>
-            <p className="eachbookauthor">{eachBook.author.name}</p>
+            <div className="eachbooktitle">{eachBook.title}</div>
+            <div className="eachbookauthor">{eachBook.author.name}</div>
           </section>
         </div>
       )}
