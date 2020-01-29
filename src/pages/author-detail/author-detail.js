@@ -29,7 +29,7 @@ class AuthorDetail extends Component{
     return(
       <div className="authors-book">
         <div className='name'>
-          <h1>{this.props.match.params.name}</h1>
+          <h1>{this.props.match.params.name}'s Books</h1>
         </div>
         
         <div className="detail-container">
