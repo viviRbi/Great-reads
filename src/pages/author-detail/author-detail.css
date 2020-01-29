@@ -15,8 +15,9 @@
 }
 
 .detail-container{
-  display: inline-block;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .details{
@@ -25,19 +26,6 @@
   padding: 1%;
   margin: 5% 2.5%;
   background: #becabf;
-}
-
-
-@media only screen and (min-width: 768px){
-
-  .detail-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-
-@media only screen and (min-width: 1200px){
-
   
 }
+
