@@ -41,7 +41,8 @@ box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.61);
   height: 70%;
   cursor: pointer;
 }
-.eachbookholder .bookdelete, .eachbookholder .bookedit{
+
+.bookdelete, .bookedit{
   color: white;
   position: absolute;
   background: grey;
@@ -50,10 +51,12 @@ box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.61);
   cursor: pointer;
   font-size: 2vmin;
 }
-.eachbookholder .bookdelete{
+
+.bookdelete{
   left: 0;
 }
-.eachbookholder .bookedit{
+
+.bookedit{
   right: 0;
 }
 
